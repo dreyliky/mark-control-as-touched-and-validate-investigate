@@ -4,7 +4,7 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { ButtonModule, TextBoxModule } from 'ngx-os';
 import { AppComponent } from './app.component';
-import { UserFormComponent } from './user-form';
+import { UserFormComponent } from './components/user-form';
 import { MyInputComponent } from './components/my-input/my-input.component';
 
 @NgModule({
