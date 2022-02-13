@@ -1,0 +1,9 @@
+:host {
+    display: block;
+}
+
+.text-box.error {
+    &::ng-deep input {
+        border: solid 2px red;
+    }
+}

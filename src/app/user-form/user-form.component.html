@@ -1,37 +1,16 @@
 <form [formGroup]="form">
-    <mat-form-field class="example-full-width">
-        <mat-label>Login</mat-label>
+    <app-my-input
+        [placeholder]="'Login'"
+        [formControlName]="'login'">
+    </app-my-input>
 
-        <input
-            matInput
-            [formControlName]="'login'" />
+    <app-my-input
+        [placeholder]="'Email'"
+        [formControlName]="'email'">
+    </app-my-input>
 
-        <mat-error *ngIf="form.controls['login'].hasError('required')">
-            Please enter a valid login
-        </mat-error>
-    </mat-form-field>
-
-    <mat-form-field class="example-full-width">
-        <mat-label>Email</mat-label>
-
-        <input
-            matInput
-            [formControlName]="'email'" />
-
-        <mat-error *ngIf="form.controls['email'].hasError('required')">
-            Please enter a valid email address
-        </mat-error>
-    </mat-form-field>
-
-    <mat-form-field class="example-full-width">
-        <mat-label>Password</mat-label>
-
-        <input
-            matInput
-            [formControlName]="'password'" />
-
-        <mat-error *ngIf="form.controls['password'].hasError('required')">
-            Please enter a valid password
-        </mat-error>
-    </mat-form-field>
+    <app-my-input
+        [placeholder]="'Password'"
+        [formControlName]="'password'">
+    </app-my-input>
 </form>

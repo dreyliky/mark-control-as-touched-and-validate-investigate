@@ -1,23 +1,25 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
-import { ReactiveFormsModule } from '@angular/forms';
-import { MatInputModule } from '@angular/material/input';
-import { MatButtonModule } from '@angular/material/button';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
+import { ButtonModule, TextBoxModule } from 'ngx-os';
 import { AppComponent } from './app.component';
 import { UserFormComponent } from './user-form';
+import { MyInputComponent } from './components/my-input/my-input.component';
 
 @NgModule({
     declarations: [
         AppComponent,
-        UserFormComponent
+        UserFormComponent,
+        MyInputComponent
     ],
     imports: [
         BrowserModule,
         BrowserAnimationsModule,
         ReactiveFormsModule,
-        MatInputModule,
-        MatButtonModule
+        FormsModule,
+        ButtonModule,
+        TextBoxModule
     ],
     bootstrap: [AppComponent]
 })

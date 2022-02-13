@@ -1,6 +1,5 @@
-import { Component, ChangeDetectionStrategy, ChangeDetectorRef } from '@angular/core';
+import { Component, ChangeDetectionStrategy, Input } from '@angular/core';
 import { FormGroup } from '@angular/forms';
-import { BaseFormComponent } from '@core';
 
 @Component({
     selector: 'app-user-form',
@@ -8,10 +7,7 @@ import { BaseFormComponent } from '@core';
     styleUrls: ['./user-form.component.scss'],
     changeDetection: ChangeDetectionStrategy.OnPush
 })
-export class UserFormComponent extends BaseFormComponent<FormGroup> {
-    constructor(
-        changeDetector: ChangeDetectorRef
-    ) {
-        super(changeDetector);
-    }
+export class UserFormComponent {
+    @Input()
+    public form!: FormGroup;
 }

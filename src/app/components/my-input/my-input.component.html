@@ -1,0 +1,7 @@
+<os-text-box
+    class="text-box"
+    [class.error]="isFormControlInvalid"
+    [placeholder]="placeholder"
+    [ngModel]="value"
+    (osInput)="onInputValueChange($event)">
+</os-text-box>
