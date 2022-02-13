@@ -1,4 +1,7 @@
-# MarkControlAsTouchedAndValidateInvestigate
+# How does Taiga UI markControlAsTouchedAndValidate function work?
+
+### Check video on Youtube about this example project
+[![CHECK YOUTUBE VIDEO](https://img.youtube.com/vi/zIwKNj5oE8w/0.jpg)](https://www.youtube.com/watch?v=zIwKNj5oE8w)
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 13.1.1.
 
